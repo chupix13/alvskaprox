@@ -1,33 +1,28 @@
-How to use this :
+Running Script:
 
-1. Make sure you have Python2.7 installed
-2. Check the file squid.conf.file and verify if this is the configuration you want
-3. By default these two users are updated for Squid : //let me know if you want them to be modified and user taken input in future
+Open up your terminal/hyper.is/powershell/Putty
 
-    user1 - admin
-    user2 - admin
+IF YOU ARE A WINDOWS USER, YOU WILL NEED TO INSTALL OPEN SSH TO USE POWERSHELL OR HYPER
 
-             line 299   userdict = {'user1':'admin', 'user2':'admin'}
-             line 300   squidconfig = "squid.conf.file"
+1. Once your terminal/hyper.is/powershell/Putty is opened, type in the following command: ssh root@ipaddress
+^ replace the word “ipaddress” with the Ip address of the VPS/server you bought
 
+2. Press enter once the command is typed. If you get a yes & no option, just type in YES and execute.
 
+3. You will then be prompted with a password, enter the VPS’s password and execute.
 
+4. You’ll have a lot of text show up once connected. Therefore, enter the following command ‘
+clear ‘ and execute: DO NOT INCLUDE ( ‘ ‘ ) 5. You screen should now be empty
 
-4. if everything is Fine, just run bash setup.py and enjoy!
+6. Type in the following command ‘ wget --no-cache https://raw.githubusercontent.com/chupix13/alvskaprox/master/setup.sh ‘ & execute
 
+7. Type in the following command ‘ ls ‘ & execute. “ setup.sh “ should show up, meaning the script has been downloaded on the VPS
 
-ps - Run the script as root user or sudo run it, else it will curse you! :D
+8. Type in the following command ‘ sudo bash setup.sh ‘ & execute. This should take up to like 5 minutes.
 
-
-
-for example : get the zip file in your system and run :
-
-
-wget --no-cache https://raw.githubusercontent.com/light-bringer/python-shell/master/setup.sh
-
-
-sudo bash setup.sh
-
+9. Once you get the success or done or finish, message you’re good.
+You can check which ports the server is listening to using the command ‘ vim /etc/squid3/
+squid.conf ‘
 
 
 twitter:  @_alvska
