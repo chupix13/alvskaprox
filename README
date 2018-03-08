@@ -1,28 +1,8 @@
-Running Script:
-
-Open up your terminal/hyper.is/powershell/Putty
-
-IF YOU ARE A WINDOWS USER, YOU WILL NEED TO INSTALL OPEN SSH TO USE POWERSHELL OR HYPER
-
-1. Once your terminal/hyper.is/powershell/Putty is opened, type in the following command: ssh root@ipaddress
-^ replace the word “ipaddress” with the Ip address of the VPS/server you bought
-
-2. Press enter once the command is typed. If you get a yes & no option, just type in YES and execute.
-
-3. You will then be prompted with a password, enter the VPS’s password and execute.
-
-4. You’ll have a lot of text show up once connected. Therefore, enter the following command ‘
-clear ‘ and execute: DO NOT INCLUDE ( ‘ ‘ ) 5. You screen should now be empty
-
-6. Type in the following command ‘ wget --no-cache https://raw.githubusercontent.com/chupix13/alvskaprox/master/setup.sh ‘ & execute
-
-7. Type in the following command ‘ ls ‘ & execute. “ setup.sh “ should show up, meaning the script has been downloaded on the VPS
-
-8. Type in the following command ‘ sudo bash setup.sh ‘ & execute. This should take up to like 5 minutes.
-
-9. Once you get the success or done or finish, message you’re good.
-You can check which ports the server is listening to using the command ‘ vim /etc/squid3/
-squid.conf ‘
 
 
-twitter:  @_alvska
+Type in the following command ‘ wget --no-cache https://raw.githubusercontent.com/chupix13/alvskaprox/master/setup.sh ‘ & execute
+
+Type in the following command ‘ ls ‘ & execute. “ setup.sh “ should show up, meaning the script has been downloaded on the VPS
+
+Type in the following command ‘ sudo bash setup.sh ‘ & execute. This should take up to like 5 minutes.
+
